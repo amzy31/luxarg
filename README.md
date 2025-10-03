@@ -1,50 +1,41 @@
 # luxarg :
 
+LUXARG is the best SCI-FI project editor for MATE-DESKTOP, built with GJS (GNOME JavaScript).
 
-LUXARG is another keyboard friendly text editor.
+This project is a remake using GJS for a futuristic, keyboard-friendly text editor.
 
-This project started at August 2019 and restarted at 2021 TODAY!
+Easy to use and user-friendly!
 
-Easy to use and userfriendly !
-
-
-
-
-LUXARG support :
-
-Fedora, CENTOS and RedHat,
-
-Debian and Ubuntu,
-
-OpenSUSE,
-
-Arch and Manjaro, ...
-
+LUXARG supports GNOME and MATE desktops on Linux distributions.
 
 # ICON
 
 ![ICON](icon/luxarg.png)
 
-
 # screenshot :
 
 ![screenshot](screenshot/1.png)
 
-
-# KEYS : 
+# KEYS :
     INSERT MODE : <F1>
     SAVE   MODE : <F2>
     OPEN   MODE : <F3>
+    STOP MODE   : <Escape>
 
 # INSTALLATION
-    $ python<3X> installer.py
+    Ensure GJS and GTK are installed:
+    $ sudo apt install gjs libgtk-3-dev  # For Debian/Ubuntu
+    $ sudo dnf install gjs gtk3-devel    # For Fedora
+    $ sudo pacman -S gjs gtk3            # For Arch
 
-# dependencies
-    $ pip3 install -r requirements.txt
+    Run the editor:
+    $ gjs main.js
 
-# update method
-    $ cd ~/.luxarg
-    $ python<3X> update.py
+# DEPENDENCIES
+    - GJS (GNOME JavaScript)
+    - GTK 3
 
-# Install pip
-    pip.txt
+# FEATURES
+    - Sci-fi dark theme with neon green text
+    - Keyboard-driven modes
+    - File save and open dialogs
