@@ -1,41 +1,77 @@
-# luxarg :
+# Luxarg
 
-LUXARG is the best SCI-FI project editor for MATE-DESKTOP, built with GJS (GNOME JavaScript).
+**The Best Sci-Fi Text Editor for MATE-DESKTOP**
 
-This project is a remake using GJS for a futuristic, keyboard-friendly text editor.
+Luxarg is a text editor made with GJS (GNOME JavaScript). It has a dark sci-fi look with green text. It works well on MATE Desktop. You can use the keyboard to control it easily.
 
-Easy to use and user-friendly!
+*Developed on MATE Desktop.*
 
-LUXARG supports GNOME and MATE desktops on Linux distributions.
+## Features
 
-# ICON
+- **Sci-Fi Look**: Black background, green text, and yellow labels. It looks like a future computer.
+- **Keyboard Controls**:
+  - **Insert Mode** (`F1`): Start writing text.
+  - **Save Mode** (`F2`): Open a window to save the file.
+  - **Open Mode** (`F3`): Open a window to load a file.
+  - **Stop Mode** (`Escape`): Stop writing and go back to start.
+- **File Work**: Use GTK windows to save or open files.
+- **Works on Many Systems**: Runs on GNOME and MATE on different Linux types.
 
-![ICON](icon/luxarg.png)
+## Pictures
 
-# screenshot :
+### Icon
+![Icon](icon/luxarg.png)
 
-![screenshot](screenshot/1.png)
+### Editor Screen
+![Screenshot](screenshot/1.png)
 
-# KEYS :
-    INSERT MODE : <F1>
-    SAVE   MODE : <F2>
-    OPEN   MODE : <F3>
-    STOP MODE   : <Escape>
+## How to Install
 
-# INSTALLATION
-    Ensure GJS and GTK are installed:
-    $ sudo apt install gjs libgtk-3-dev  # For Debian/Ubuntu
-    $ sudo dnf install gjs gtk3-devel    # For Fedora
-    $ sudo pacman -S gjs gtk3            # For Arch
+### What You Need
+- A Linux computer with GNOME or MATE.
+- GJS and GTK 3 programs.
 
-    Run the editor:
-    $ gjs main.js
+### Install Programs
+For Ubuntu 24.04:
 
-# DEPENDENCIES
-    - GJS (GNOME JavaScript)
-    - GTK 3
+```bash
+sudo apt update
+sudo apt install gjs libgtk-3-dev
+```
 
-# FEATURES
-    - Sci-fi dark theme with neon green text
-    - Keyboard-driven modes
-    - File save and open dialogs
+### Install Luxarg
+1. Get the code from the website.
+2. Run this to install:
+   ```bash
+   make install
+   ```
+   It will add the needed programs and set up the menu icon.
+
+Or run it by hand:
+```bash
+gjs main.js
+```
+
+## How to Use
+
+- Start the editor: `gjs main.js` or click the icon in the menu.
+- Press keys to change modes.
+- Write text when in Insert mode.
+- Save or open files with the right modes.
+
+## Programs Needed
+
+- **GJS**: JavaScript for GNOME.
+- **GTK 3**: Tools for the user interface.
+
+## Help Make It Better
+
+We like your ideas! Copy the project and send changes back.
+
+## License
+
+This is free software under GNU GPL v3. Read the LICENSE file.
+
+## Get Help
+
+Have a problem? Ask on the GitHub page.
