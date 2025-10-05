@@ -6,7 +6,10 @@ install:
 	@echo "Copying desktop entry..."
 	@mkdir -p ~/.local/share/applications
 	@cp xdg/luxarg.desktop ~/.local/share/applications/
-	@echo "Installation complete."
+	@echo "Installing luxarg command..."
+	@mkdir -p ~/.local/bin
+	@cp luxarg ~/.local/bin/
+	@echo "Installation complete. Make sure ~/.local/bin is in your PATH."
 
 run:
 	@gjs main.js
